@@ -190,20 +190,20 @@ dns = Flexible_Engine_DNS_APIs()
 
 
 # Search for a zone by name
-# print(dns.list_zones(name='devops-caffe.com.').get('output').get('zones')[0])
+# print(dns.list_zones(name='your-domain.com.').get('output').get('zones')[0])
 
 
 # Get zone's ID
-zone_id = dns.list_zones(name='devops-caffe.com.').get('output').get('zones')[0]['id']
+zone_id = dns.list_zones(name='your-domain.com.').get('output').get('zones')[0]['id']
 
 # Create A record
-print(dns.create_record(zone_id=zone_id, name="love1.devops-caffe.com.", records=['192.168.1.50']))
+print(dns.create_record(zone_id=zone_id, name="love1.your-domain.com.", records=['192.168.1.50']))
 
 # List records in a specific Zone
-# print(dns.list_records_in_zone(devops_caffe_zone_id).get('output').get('recordsets'))
+# print(dns.list_records_in_zone(your-domain_zone_id).get('output').get('recordsets'))
 
 # Get the id of specific Record
-record_id = dns.list_records_in_zone(zone_id, name='love1.devops-caffe.com.').get('output').get('recordsets')[0].get('id')
+record_id = dns.list_records_in_zone(zone_id, name='love1.your-domain.com.').get('output').get('recordsets')[0].get('id')
 
 # print(record_id)
 
