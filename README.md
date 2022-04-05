@@ -5,7 +5,11 @@ This is a Python class for the DNS Service of the **Flexible Engine** _Openstack
 
 The class contains the common methods that I've personally used, however more methods can be added easily.
 
+---
+
 ## Usage
+
+<br>
 
 > Make sure you provide the correct endpoint
 
